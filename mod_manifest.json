@@ -1,0 +1,10 @@
+{
+  "id": "STS2_RunLibrary",
+  "name": "Run Library",
+  "author": "zaxnyd",
+  "description": "Companion to the STS2 Save Sync app. After you pick a multiplayer run to host in the app, the game opens straight into that run's Load lobby. Reads a one-time note the app leaves on this computer; never goes online and never changes your saves.",
+  "version": "0.1.0",
+  "has_pck": false,
+  "has_dll": true,
+  "affects_gameplay": false
+}
