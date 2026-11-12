@@ -47,3 +47,10 @@ launch the game). Never overwrite the DLL in place while the game runs.
 - Reuse the game's own methods for UI flows so its normal checks and screens run.
 - No em dashes in user-facing text. Commit messages end with
   `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
+
+## Steam Workshop
+
+`scripts/package-workshop.sh` builds Release and stages `dist/workshop/` (git-ignored) from `workshop/`
+(`workshop.json`, `preview.png`, and `mod_id.txt` once the item exists). `--upload` runs MegaCrit's
+ModUploader (`$MODUPLOADER`, e.g. `~/code/sts2-damage-charts/tools/ModUploader`); the owner runs uploads.
+Bump `version` in `mod_manifest.json` and `changeNote` in `workshop/workshop.json` together.
