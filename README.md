@@ -2,7 +2,7 @@
 
 ![Run Library](workshop/preview.png)
 
-A small host-side companion mod for the free **STS2 Save Sync** app. When Save Sync loads a co-op run from
+A small host-side companion mod for the free **Spire Sync** app. When Spire Sync loads a co-op run from
 your save library through a Host link, the game opens straight into that run's **Multiplayer > Load**
 lobby instead of stopping at the main menu, so your friends can join right away.
 
@@ -12,8 +12,8 @@ Unofficial fan project, not affiliated with Mega Crit.
 ## Requirements
 
 - **Slay the Spire 2** (built for v0.107.1; the manifest declares `min_game_version` 0.107.1).
-- The free **STS2 Save Sync** companion app (Microsoft Store, or see
-  [sts2.thegates.house](https://sts2.thegates.house)) and access to a save library in it. Without the app
+- The free **Spire Sync** companion app (formerly STS2 Save Sync; Microsoft Store, or see
+  [spiresync.app](https://spiresync.app)) and access to a save library in it. Without the app
   the mod does nothing.
 
 ## Install
@@ -25,7 +25,7 @@ Unofficial fan project, not affiliated with Mega Crit.
 
 ## How it works
 
-When you open a Host link in STS2 Save Sync, the app loads that multiplayer run into your save slot, leaves
+When you open a Host link in Spire Sync, the app loads that multiplayer run into your save slot, leaves
 a one-time note for the mod and launches the game. When the main menu appears, the mod reads the note,
 deletes it (always, valid or not, so it acts at most once) and, if everything matches, opens
 **Multiplayer > Load** using the game's own Load flow (same checks, same lobby screen). If anything does not
@@ -82,7 +82,7 @@ The first upload creates the Workshop item and writes `dist/workshop/mod_id.txt`
 - [Multiplayer Save Slots](https://github.com/jadistanbelly/sts2-multiplayer-save-slots) by jadistanbelly
   (Unlicense, public domain) was the prior art for the host Load flow: its hook points and fail-closed
   approach informed this mod. No code is copied and there is no runtime dependency.
-- The run id logic mirrors the STS2 Save Sync save library so both agree on which run is which.
+- The run id logic mirrors the Spire Sync save library so both agree on which run is which.
 - The preview image uses [Kreon](https://fonts.google.com/specimen/Kreon) (SIL Open Font License).
 
 ## License
